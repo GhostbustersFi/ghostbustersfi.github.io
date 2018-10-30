@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="container">
+		<div class="typewriter">
+			$<div class="typewriter-text">Wake up, Neo...</div>
+		</div>
+		<div id="contact" class="hidden">contact@ghostbusters.fi</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).keydown( function(event) {
+		  if (event.which === 13) {
+		    $("#contact").removeClass("hidden")
+		  }
+		}); 
+	</script>
+</body>
+</html>
