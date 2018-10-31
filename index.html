@@ -18,10 +18,11 @@
 
 	<script type="text/javascript">
 		$(document).keydown( function(event) {
-		  if (event.which === 13) {
-		    $("#contact").removeClass("hidden")
-		  }
+			$("#contact").removeClass("hidden")
 		}); 
+		$(document).click( function(event) {
+			$("#contact").removeClass("hidden")
+		});
 	</script>
 </body>
 </html>
